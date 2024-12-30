@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+        nav a {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sunidhi Patil</h1>
+    <p>Web Developer in Progress | BTech in AIDS | Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sunidhi Patil, a student passionate for web developement(studying) in creating dynamic websites and web applications. I am looking foward in  front-end development, with a focus on user experience and clean design. My goal is to build websites that are both functional and beautiful.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>HTML & CSS</h3>
+            <p>I am proficient in HTML5 and CSS3, using them to create visually appealing and responsive websites.</p>
+        </div>
+        <div class="card">
+            <h3>CPP</h3>
+            <p>With CPP, I build PRIMARY PROGRAMS to perform minor tasks.</p>
+        </div>
+        <div class="card">
+            <h3>C language</h3>
+            <p>I create basic code for understanding.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my skills and projects. Built using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+            <h3>Time Table</h3>
+            <p>Created a time table using various tags and attribute of HTML.</p>
+        </div>
+        
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sunidhi Patil. All Rights Reserved.</p>
+    <p>Connect with me on <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> or <a href="https://github.com/your-github" target="_blank">GitHub</a>.</p>
+</footer>
+
+</body>
+</html>
